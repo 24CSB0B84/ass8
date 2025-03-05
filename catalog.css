@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-image: url('https://pbs.twimg.com/media/FLicViFaMAE1U7D.jpg:large'); /* Background Image for Header */
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#products {
+    background-color: palevioletred;
+    padding: 20px;
+}
+
+#cart {
+    background-color: #e2e2e2;
+    padding: 20px;
+    border-top: 2px solid #ddd;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.header a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 items per row */
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    background-color: aliceblue;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.product img {
+    width: 80%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.product h3 {
+    font-size: 1.2em;
+}
+
+.product p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.product button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #218838;
+}
+
+/* Hover Effect for Products */
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.cart {
+    background-color: pink;
+    padding: 20px;
+    border-top: 2px solid #ddd;
+}
+
+.cart h2 {
+    text-align: center;
+}
+
+.cart p {
+    font-size: 1.2em;
+}
+
